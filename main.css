@@ -4,16 +4,16 @@
 }
 body {
   margin: 0;
-  background-color: #0b0f2b;
-  background-position: center;
-  min-height: 100vh;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(11,15,43,1) 28%, rgba(11,15,43,1) 62%, rgba(0,0,0,1) 100%);
   font-family: "MyFont";
+  
 }
 
 
 .name {
   background-image: url("images/881563d6444b370fa4ceea0c3183bb4c.gif");
-  height: 900px;
+  height: 95vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -24,13 +24,13 @@ body {
 .name .saludo{
   color: rgb(125, 215, 148);
   margin: 0;
-  font-size: 60px;
+  font-size: 3.5vmax;
 }
 
 .name .soy{
   color: rgb(196, 184, 184);
   margin: auto;
-  font-size: 35px;
+  font-size: 3vmax;
 }
 
 .name .firstname {
@@ -39,7 +39,7 @@ body {
   margin: 0px 120px 0px;
   padding: 0px 50px;
   color: white;
-  font-size: 90px;
+  font-size: 6vmax;
   font-family: "MyFont";
   font-weight: 900;
   backdrop-filter: blur(5px);
@@ -49,22 +49,20 @@ body {
   color: rgb(196, 184, 184);
   margin: auto;
   font-family: "MyFont";
-  font-size: 25px;
+  font-size: 3vmax;
   padding: 0;
 }
 .name img {
   width: 20%;
-  align-items: center;
-  margin-top: 200px;
-  margin-left: 90px;
+  margin: auto;
 }
 
 .description {
   color: rgb(196, 184, 184);
   padding-left: 40px;
-  margin: 50px 120px;
+  margin: 100px 120px 60px;
   font-family: "MyFont";
-  font-size: 25px;
+  font-size: 1.5vmax;
 }
 
 header {
@@ -73,7 +71,6 @@ header {
   align-items: center;
   padding: 0px 10%;
   background-color: #4b6095;
-  height: 80px;
   justify-content: space-between;
 }
 header .logo {
@@ -114,7 +111,10 @@ header li .cta:hover {
 header ul {
   display: flex;
   flex-direction: row;
+  padding-left: 0;
 }
+
+
 
 .codes-row {
   display: flex;
@@ -123,7 +123,7 @@ header ul {
 }
 
 .column {
-  margin-top: 20px;
+  margin-top: 40px;
   flex: 12.5%;
   padding: 5px;
   height: 50px;
@@ -145,38 +145,40 @@ header ul {
 
 .habilidades {
   margin: auto;
-  margin-top: 150px;
+  margin-top: 10%;
   text-align: center;
   color: aqua;
   font-weight: 800;
   width: 35%;
   border-style:double;
-  font-size: 20px;
+  font-size: 1.5vmax;
 }
 
 .proyectos {
-  margin: 180px auto 80px;
+  margin: 12% auto 10%;
   text-align: center;
   color: aqua;
   font-weight: 800;
   width: 35%;
   border-style: double;
-  font-size: 20px;
+  font-size: 1.5vmax;
 }
 
 .proyectos_grid {
-  margin-top: 15px;
+  margin: 15px auto;
   display: flex;
   justify-content: center;
 }
 .column-project {
   margin-top: 20px;
   flex: 33.3%;
-  margin: auto 100px;
-  padding: 10px 20px;
+  margin: auto ;
+  padding: 2% 1%;
 }
+
 .column-project img{
-  width: 400px;
+  width: 70%;
+  padding: 0 15%;
 }
 
 .App{
@@ -186,3 +188,69 @@ header ul {
   padding: 10px 110px;
 }
 
+.D{
+  font-size: 2.5vmax;
+  position: relative;
+}
+
+.S{
+  font-size: 2.5vmax;
+}
+
+.aboutme {
+
+  margin: auto;
+  margin-top: 20%;
+  text-align: center;
+  color: aqua;
+  font-weight: 800;
+  width: 35%;
+  border-style:double;
+  font-size: 1.5vmax;
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .name {
+    flex-direction: column;
+    height: 70vh;
+  }
+
+  .codes-row {
+    flex-direction: column;
+  }
+
+  .proyectos_grid {
+    flex-direction: column;
+  }
+
+  header{
+    padding-top:18px;
+    flex-direction: column;
+  }
+  header ul {
+    flex-direction: column;
+    width: 40vh;
+    margin-right: 100px;
+  }
+
+  header li:hover{
+    background-color: rgb(227, 243, 242);
+    border-radius: 10px;
+    margin-left: 14px;
+  }
+
+  .name .firstname{
+    margin: 60px 20px 40px;
+  }
+
+  .description{
+    margin: auto 30px;
+  }
+
+  .name img{
+
+    margin: 20px;
+  }
+}
