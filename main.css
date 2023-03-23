@@ -7,7 +7,7 @@ body {
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(11,15,43,1) 28%, rgba(11,15,43,1) 62%, rgba(0,0,0,1) 100%);
   font-family: "MyFont";
-  
+  background-image: url(/images/);
 }
 
 
@@ -144,8 +144,7 @@ header ul {
 }
 
 .habilidades {
-  margin: auto;
-  margin-top: 10%;
+  margin: 10% auto 6%;
   text-align: center;
   color: aqua;
   font-weight: 800;
@@ -198,9 +197,7 @@ header ul {
 }
 
 .aboutme {
-
-  margin: auto;
-  margin-top: 20%;
+  margin: 15% auto 6%;
   text-align: center;
   color: aqua;
   font-weight: 800;
@@ -209,6 +206,57 @@ header ul {
   font-size: 1.5vmax;
 
 }
+
+.Contact{
+  margin: 10% auto 6%;
+  text-align: center;
+  color: aqua;
+  font-weight: 800;
+  width: 35%;
+  border-style:double;
+  font-size: 1.5vmax;
+}
+
+.container-contact{
+  margin: 5% 13% 10%;
+  background-color: rgb(122, 166, 163);
+  padding: 5% ;
+  padding-bottom: 3%;
+  border-radius: 10px;
+}
+
+.container-contact label{
+  color: white;
+  margin: auto 1%;
+}
+
+input{
+  width: 90%;
+  margin: auto 1%;
+  outline: none;
+  padding: 1%;
+}
+
+textarea{
+  width: 90%;
+  margin: auto 1%;
+  outline: none;
+  padding: 1%;
+  resize: none;
+}
+
+.container-contact button{
+  color: white;
+  background-color:#151d54;
+  border: none;
+  font-size: 18px;
+  margin: 2% 2% 0;
+  border-radius: 7px;
+  width: 90%;
+  padding: 10px auto ;
+}
+
+
 
 @media screen and (max-width: 800px) {
 
@@ -253,4 +301,9 @@ header ul {
 
     margin: 20px;
   }
+
+  .description{
+    margin: auto;
+  }
 }
+
