@@ -15,9 +15,9 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
+                <li><a href="#aboutme">About Me</a></li>
                 <li><a href="#proyectos">Projects</a></li>
-                <li><a href="#" class="cta">Contact</a></li>
+                <li><a href="#Contact" class="cta">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -38,40 +38,40 @@
     </h3>
     <div class="codes-row">
         <div class="column">
-          <img src="./images/C_logo.png" alt="C++" style="width:100%">
+          <img src="./images/C_logo.png">
           <p>C#</p>
         </div>
         <div class="column">
-          <img src="./images/Cplus_logo.png" alt="C++" style="width:100%">
+          <img src="./images/Cplus_logo.png">
           <p>C++</p>
         </div>
         <div class="column">
-          <img src="./images/HTML5logo.png" alt="HTML" style="width:100%">
+          <img src="./images/HTML5logo.png" >
           <p>HTML5</p>
         </div>
         <div class="column">
-            <img src="./images/JS_logo.png" alt="Javascript" style="width:100%">
+            <img src="./images/JS_logo.png" >
             <p>JavaScript</p>
         </div>
         <div class="column">
-            <img src="./images/Sass_logo.png" alt="SCSS" style="width:100%">
+            <img src="./images/Sass_logo.png">
             <p>Scss</p>
         </div>
         <div class="column">
-            <img src="./images/webpack_logo.png" alt="Webpack" style="width:150%">
+            <img src="./images/webpack_logo.png"  >
             <p>Webpack</p>
         </div>
         <div class="column">
-            <img src="./images/CSS_logo.png" alt="CSS" style="width:150%">
+            <img src="./images/CSS_logo.png" >
             <p>CSS3</p>
         </div>
         <div class="column">
-            <img src="./images/nodeJS_logo.png" alt="NodeJS" style="width:150%">
+            <img src="./images/nodeJS_logo.png">
             <p>Node.JS</p>
         </div>
       </div>
       
-      <div class="aboutme">
+      <div class="aboutme" id="aboutme">
         <h2>ACERCA DE MI</h2>
     </div>
     <h3 class="description">
@@ -101,26 +101,28 @@
                 </a>
             </div>
         </div>
-    
-        <div class="Contact">
+        
+        <form action="https://formsubmit.co/vvrqrpvv@gmail.com" method="POST">
+        <div class="Contact" id="Contact">
             <h2>Contacto</h2>
         </div>
         <div class="container-contact">
         <div class="input-space">
             <label>Nombre</label><br>
-            <input type="text" placeholder="Nombre">
+            <input type="text" name="name" placeholder="Nombre" required>
         </div>
         <div class="input-space">
-            <label>Email</label><br>
-            <input type="text" placeholder="Email">
+            <label >Email</label><br>
+            <input type="email" name="email" placeholder="Email" required>
         </div>
         <div class="input-space">
             <label>Mensaje</label><br>
-            <textarea rows="10"></textarea>
+            <textarea type="textarea" name="textarea" rows="10"></textarea>
         </div>
 
-        <button>Enviar</button>
+        <button type="submit">Enviar</button>
         </div>
+        </form>
 
 </body>
 </html>
